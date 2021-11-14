@@ -2,7 +2,6 @@
 @setlocal EnableExtensions DisableDelayedExpansion
 
 set "rev=0.0.3"
-set "lastupdt=2021-06-24"
 title Cscratch v%rev%
 
 set "startup_path=%~dp0"
@@ -49,7 +48,6 @@ exit /b
 echo;
 echo     Cscratch v%rev%
 echo     https://lxvs.net/cscratch
-echo     Last updated: %lastupdt%
 echo;
 exit /b
 

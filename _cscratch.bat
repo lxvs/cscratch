@@ -1,7 +1,7 @@
 @echo off
 @setlocal EnableExtensions DisableDelayedExpansion
 
-set "rev=0.0.3"
+set "rev=0.0.4"
 title Cscratch v%rev%
 
 set "startup_path=%~dp0"
@@ -24,6 +24,7 @@ fltmc 1>nul 2>&1 || goto GetAdmin
 @call:logo
 
 if defined startup_path pushd "%startup_path%"
+set "path=%batchfolder%\command;%path%"
 cmd /k call "%VsDevCmd%"
 exit /b
 
